@@ -1,0 +1,86 @@
+
+.main{
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Header*/
+.header__nav--main nav{
+    background-color: #f2eaea;
+    height: 70px;
+}
+
+.main-nav__list-item{
+  list-style: "none";
+  margin: 3px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f2eaea;
+}
+.main-list__item-list-item{
+    margin: 10px; 
+    background-color: bisque;
+}
+
+.list-items__ToDoIcon{
+    justify-content: baseline;
+}
+
+.list_item__text{
+   text-align: 20%;
+}
+.list_items__text-link{
+    font: "TT Polls Script";
+    font-size: 60px;
+    text-align: "left"; 
+    font-size: 40px; 
+}
+
+.hello-user{
+    font-family: "Verdana";
+    font-weight:lighter;
+    
+}
+
+/*GRID DONDE ESTAN EL CALENDARIO, CARTAS, FORMULARIOS DE TAREAS, ETC */
+
+.Python{
+    background-color: #F0D1A8
+}
+.main__home--tasks-grid{
+    background-color: #FAF7F2;
+    display: flex;
+    flex-direction: row-reverse;
+    grid-template-columns: 50% auto; 
+    padding: 19px; 
+    align-items:center;
+    gap:50px;
+
+}
+
+.main__home--calendar-grid{
+    justify-content: stretch;
+    display: grid;
+    grid-template-columns:  40px 40px 40px 40px 40px  40px 40px;
+
+
+}
+.main__home--calendar-days{
+    grid-template-columns: 40px 40px 40px 40px 40px  40px 40px ;
+    font-weight: bold;
+    text-shadow: #4f473d;
+
+}
+.about__caption{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+}
+
+
+.greeting{
+    background-color: #f8f8f8; 
+}
+

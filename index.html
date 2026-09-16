@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="x-icon" href="https://i.pinimg.com/736x/1f/3f/4c/1f3f4ce973d946578567f190e2773709.jpg"> 
+    <title>TO DO LIST APP</title>
+</head>
+<body>
+    <header class="header">
+     <nav class="header__nav--main nav">
+      <ul class="main-nav__list-item">
+        <li class ="main-list__item-list-item"> 
+          <a class="list-item__logo-link" href="#">
+          <img class="list-items__ToDo-icon" src="logo.png" alt = "AQUÍ DEBE ESTAR EL LOGO" height = "60px" width= "70px">
+        </li>
+        <li class = "main-list__item-list-item">
+          <a class="list_item__text">
+          <span class="list_items__text-link"> Yista Lab <span>
+        </li>
+         <li class="main-list__item list-item">
+          <a class="list-item__UserProfile"></a>
+          <img class= "list-item__UserProfile--UserPic" src ="profile.png" type = "profile/x-icon"  alt="User profile" height = "80px" width = "90px">
+        </li>
+  
+
+        </li>
+      </a>
+     </ul>
+     </nav>
+    </header>
+
+<main class="main">
+    <section class="main__home greeting" id="greeting">
+      <h1 class="hello-user"> <strong>Hello User,</strong> Start planning today</h1>
+      
+    </section>
+
+    <!-- CONTENEDOR GENERAL DEL DASHBRDOARD DEL CALENDARIO -->
+    <section class="main__home--calendar-dashboard">
+      <aside class="calendar-widget">
+
+        <h2>Sunday</h2>
+        <p>04, April 2024</p>
+      </section>
+       <section class="main__home--calendar-grid">
+        <!--borrador de un calendario, luego se ajusta para cada mes-->
+        <section class="main_home--calendar-days">
+        <section>L</section>
+        <section>M</section>
+        <section>X</section>
+        <section>T</section>
+        <section>F</section>
+        <section>S</section>
+        <section>SUN</section>
+         </section>
+          <section class="calendar-item item1">1</section>
+          <section class="calendar-item item2">2</section>
+          <section class="calendar-item item3">3</section>
+          <section class="calendar-item item4">4</section>
+          <section class="calendar-item item5">5</section>
+          <section class="calendar-item item6">6</section>
+          <section class="calendar-item item7">7</section>
+          <section class="calendar-item item8">8</section>
+          <section class="calendar-item item9">9</section>
+          <section class="calendar-item item10">10</section>
+          <section class="calendar-item item11">11</section>
+          <section class="calendar-item item12">12</section>
+          <section class="calendar-item item13">13</section>
+          <section class="calendar-item item14">14</section>
+          <section class="calendar-item item15">15</section>
+          <section class="calendar-item item16">16</section>
+          <section class="calendar-item item17">17</section>
+          <section class="calendar-item item18">18</section>
+          <section class="calendar-item item19">19</section>
+          <section class="calendar-item item20">20</section>
+          <section class="calendar-item item21">21</section>
+          <section class="calendar-item item22">22</section>
+          <section class="calendar-item item23">23</section>
+          <section class="calendar-item item24">24</section>
+          <section class="calendar-item item25">25</section>
+          <section class="calendar-item item26">26</section>
+          <section class="calendar-item item27">27</section>
+          <section class="calendar-item item28">28</section>
+          <section class="calendar-item item29">29</section>
+          <section class="calendar-item item30">30</section>
+      </aside>
+    </section>
+
+      <!-- ===== FORMULARIO PARA TAREAS =====-->
+      <section class="main__home--tasks-form">
+        <form class="taks-form__new-task-form">
+
+          <input type="text" placeholder="Task title">
+          <input type="text" placeholder="Details">
+
+          <button type="submit">+</button>
+        </form>
+      </section>
+
+        <!-- FILTROS DE TAREAS -->
+        <section class="main__home--filters">
+    
+            <select class="filters__category">
+             <option>By category</option> </select>
+            <select class="filters__priority">
+            <option>By priority</option>
+             </select>
+
+         
+          <input class= "search-bar" type="search" placeholder="Search tasks">
+        </section>
+
+        <!-- GRID DE TAREAS -->
+        <section class="main__home--tasks-grid">
+
+          <article class="task-card">
+            <h3 class="about-caption">Learn JavaScript</h3>
+            <p class="task-card__task-description">Master the langauge powering <br> the modern web</p>
+            <p class="task-card__card-date">Start date: 07-07-2023</p>
+
+            <!--con un código Python se agregaría una nueva card-->
+
+            <section class="tasks-grid__card-actions">
+              <button>Complete</button>
+              <button>Edit</button>
+              <button>Delete</button>
+            </section>
+          </article>
+
+         <article class="task-card__Python"> 
+              <h3 class="about-caption Python">Python Mastering</h3>
+              <p class="task-card__task-description">To master the Computer and Data Science, ML programms and <br> automatations backend programming langauge </p>
+              <p class="task-card__card-date">Start date: 14-04-2024</p>
+              
+            <section class="task-grid__card-actions">
+              <button>Complete</button>
+              <button>Edit</button>
+              <button>Delete</button>
+            </section>
+         </article>
+
+         <article class="task-card Bible"> 
+           <h3 class="about_caption Bible">Reding the Bible</h3>
+             <p class="task-card__task-description"> To master God's word and apply into daily life, by converting <br> Jesus Christ teaches into real actions </p>
+             <p class= "task-card__card-date">Start date: 15-03-2024</p>
+                 
+         <section class="task-grid__card-actions">
+              <button>Complete</button>
+              <button>Edit</button>
+              <button>Delete</button>
+
+          <article class="task-card__Gym">
+            <section class="about_caption__GYM"> 
+                                                                                                                    
+            </section>
+          </article>
+
+        </section>
+        
+       </article>
+
+        </section>
+
+        <button class="load-more">Load more</button>
+
+      </section>
+
+    </section>
+
+  </main>
+
+<!--Stats-->
+  <footer class="footer__dashboard-stats">
+
+    <section class="footer__stat-card--completed">
+      <h3 class ="about__caption completed-tasks">Completed Tasks</h3>
+      <p>04</p>
+    </section>
+
+    <section class="footer__stat-card--pending">
+      <h3 class ="about__caption pending-taks">Pending Tasks</h3>
+      <p>15</p>
+    </section>
+
+    <section class="stat-card">
+      <h3 class ="about__caption tasks">Tasks Created</h3>
+      <p>1,500</p>
+    </section>
+
+    <section class="footer__active-users--">
+      <p>25k+ Active Users</p>
+
+     <section class="avatars">
+        <!-- imágenes de usuarios -->
+      </section>
+    </section>
+
+  </footer>
+</body>
+</html>
