@@ -1,4 +1,8 @@
-
+*, *::before *::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
 .main{
     display: grid;
     flex-wrap: wrap;
@@ -6,43 +10,50 @@
 }
 
 /*Header*/
-.header__nav--main nav{
+.nav{
     background-color: #f2eaea;
-    height: 70px;
+    height: 30px;
 }
 
-.main-nav__list-item{
+.nav__list{
   list-style: "none";
-  margin: 3px;
-  padding: 5px;
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: #f2eaea;
+  justify-content: space-between; gap:1.5rem;
+  background-color: #f2eaea; align-items:flex-end;
 }
-.main-list__item-list-item{
+
+.nav__item{
     margin: 10px; 
-    background-color: bisque;
+    background-color: bisque; 
+}
+.nav__avatar{
+    max-height: 40px;
+    max-width: 40px; padding: 20px; 
+    border-radius: 50%;
+    
 }
 
-.list-items__ToDoIcon{
-    justify-content: baseline;
+.nav__logo{
+    justify-content: baseline; 
+    max-height: 40px;
+    max-width: 40px;
 }
 
-.list_item__text{
+.nav__item>nav__text{
    text-align: 20%;
 }
-.list_items__text-link{
+.nav__text{
     font: "TT Polls Script";
     font-size: 60px;
     text-align: "left"; 
     font-size: 40px; 
+    padding-top: 0.5rem; margin:1rem; 
 }
 
 .hello-user{
     font-family: "Verdana";
-    font-weight:lighter;
-    
+    padding-top: 10rem;
 }
 
 /*GRID DONDE ESTAN EL CALENDARIO, CARTAS, FORMULARIOS DE TAREAS, ETC */
@@ -53,11 +64,9 @@
 .main__home--tasks-grid{
     background-color: #FAF7F2;
     display: flex;
-    flex-direction: row-reverse;
-    grid-template-columns: 50% auto; 
-    padding: 19px; 
-    align-items:center;
-    gap:50px;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: space;
 
 }
 
