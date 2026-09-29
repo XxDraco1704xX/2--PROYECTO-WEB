@@ -30,7 +30,7 @@
 </header>
   
 
-<main class="main">
+<main class="dashboard-container">
     <section class="main__home-greeting" id="greeting">
       <h1 class="hello-user"> <strong>Hello User,</strong> Start planning today</h1>
       
@@ -120,40 +120,50 @@
             <p class="task-card__card-date">Start date: 07-07-2023</p>
 
             <!--con un código Python se agregaría una nueva card-->
-
-            <section class="tasks-grid__card-actions">
+         
+            <section class="task-card__actions">
               <button>Complete</button>
               <button>Edit</button>
               <button>Delete</button>
             </section>
           </article>
 
-         <article class="task-card__Python"> 
-              <h3 class="about-caption Python">Python Mastering</h3>
-              <p class="task-card__task-description">To master the Computer and Data Science, ML programms and <br> automatations backend programming langauge </p>
+         <article class="task-card"> 
+              <h3 class="about-caption">Python Mastering</h3>
+              <p class="task-card__description">To master the Computer and Data Science, ML programms and <br> automatations backend programming langauge </p>
               <p class="task-card__card-date">Start date: 14-04-2024</p>
               
-            <section class="task-grid__card-actions">
+            <section class="task-card__actions">
               <button>Complete</button>
               <button>Edit</button>
               <button>Delete</button>
             </section>
          </article>
 
-         <article class="task-card Bible"> 
-           <h3 class="about_caption Bible">Reding the Bible</h3>
-             <p class="task-card__task-description"> To master God's word and apply into daily life, by converting <br> Jesus Christ teaches into real actions </p>
-             <p class= "task-card__card-date">Start date: 15-03-2024</p>
+         <article class="task-card"> 
+           <h3 class="about_caption ">Reding the Bible</h3>
+             <p class="task-card__description"> To master God's word and apply into daily life, by converting <br> Jesus Christ teaches into real actions </p>
+             <p class= "task-card__date">Start date: 15-03-2024</p>
                  
-         <section class="task-grid__card-actions">
+         <section class="task-card__actions">
               <button>Complete</button>
               <button>Edit</button>
               <button>Delete</button>
+         </section>
+        </article>
+         <article class="task-card" id="GYM">
+            <h3 class="about_caption">  Going to the gym</h3>
+            <p class="task-card__description">To take care about fitness health  and get <br>
+            an aesthetic body </p>
+            <p class="task-card__start-date">2025-10-06</p>
+            <section class="task-card__actions">
+             <button>Complete</button>
+              <button>Edit</button>
+              <button>Delete</button>
 
-          <article class="task-card__Gym">
-            <section class="about_caption__GYM"> 
-                                                                                                                    
             </section>
+          </article>
+  
           </article>
 
         </section>
@@ -171,31 +181,42 @@
   </main>
 
 <!--Stats-->
-  <footer class="footer__dashboard-stats">
+  <section class="footer__dashboard-stats">
 
-    <section class="footer__stat-card--completed">
-      <h3 class ="about__caption completed-tasks">Completed Tasks</h3>
+    <section class="footer__stats-card--completed">
+      <h3>Completed Tasks</h3>
       <p>04</p>
     </section>
 
-    <section class="footer__stat-card--pending">
-      <h3 class ="about__caption pending-taks">Pending Tasks</h3>
+    <section class="footer__stats-card--pending">
+      <h3>Pending Tasks</h3>
       <p>15</p>
     </section>
 
-    <section class="stat-card">
-      <h3 class ="about__caption tasks">Tasks Created</h3>
+    <section class="stats-card">
+      <h3>Tasks Created</h3>
       <p>1,500</p>
     </section>
 
-    <section class="footer__active-users--">
+    <section class="active-users">
       <p>25k+ Active Users</p>
 
      <section class="avatars">
         <!-- imágenes de usuarios -->
       </section>
     </section>
+</section>
 
-  </footer>
+<footer class="rights-&-social-media">
+   <section>
+     <img class="logo" src="logo.png">
+     <p class="brand">Yista Lab</p>
+
+     <p class="rights">C 2024 Aqeel Shahzad All rights reserved</p>
+     <img src="twitter.png" alt="twitter logo"><img src="linkedin.png" alt="linkedin logo"><img src="twitter.png" alt="twitter logo">
+     <img src="github.png" alt="Github logo">
+        
+   </section>
+ </footer>
 </body>
 </html>

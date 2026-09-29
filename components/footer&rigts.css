@@ -1,0 +1,9 @@
+.logo{
+    border-radius: 1rem;
+    height: 30px; width: 20px
+}
+
+.rights-&-social-media{
+    display:flex;
+    flex-direction: row;
+}
