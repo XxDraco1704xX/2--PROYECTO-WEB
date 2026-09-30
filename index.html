@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="category" content="time management, planning, day planning">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="shortcut icon" type="x-icon" href="https://i.pinimg.com/736x/1f/3f/4c/1f3f4ce973d946578567f190e2773709.jpg"> 
+    <title>TO DO LIST APP</title>
+</head>
+<body>
+    
+<header class="header">
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <img class="nav__logo" src="logo.png" alt="Logo Yista Lab">
+        </a>
+      </li>
+      <li class="nav__item">
+        <p class="nav__text">Yista lab</p>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <img class="nav__avatar" src="profile.png" alt="Perfil de usuario">
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  
+<section class="main__home-greeting" id="greeting">
+     <h1 class="hello-user"> <strong>Hello {name},</strong> Start planning today</h1>
+</section>
+
+<main class="dashboard-container">
+
+    <!-- CONTENEDOR GENERAL DEL DASHBRDOARD DEL CALENDARIO -->
+     <section class="main__home--calendar-grid">
+        <!--borrador de un calendario, luego se ajusta para cada mes-->
+        <section class="main_home--calendar-days">
+         <div class="date">
+           <h2>Sunday</h2>
+           <p>04, April 2024</p>
+        </div>
+        
+         <div>M<div>
+         <div>X</div>
+         <div>T</div>
+         <div>F</div>
+         <div>S<div>
+         <div>SUN</div>
+
+         </section>
+         <div class="calendar-item item1">1</div>
+          <div class="calendar-item item2">2</div>
+          <div class="calendar-item item3">3</div>
+          <div class="calendar-item item4">4</div>
+          <div class="calendar-item item5">5</div>
+          <div class="calendar-item item6">6</div>
+          <div class="calendar-item item7">7</div>
+          <div class="calendar-item item8">8</div>
+          <div class="calendar-item item9">9</div>
+          <div class="calendar-item item10">10</div>
+          <div class="calendar-item item11">11</div>
+          <div class="calendar-item item12">12</div>
+          <div class="calendar-item item13">13</div>
+          <div class="calendar-item item14">14</div>
+          <div class="calendar-item item15">15</div>
+          <div class="calendar-item item16">16</div>
+          <div class="calendar-item item17">17</div>
+          <div class="calendar-item item18">18</div>
+          <div class="calendar-item item19">19</div>
+          <div class="calendar-item item20">20</div>
+          <div class="calendar-item item21">21</div>
+          <div class="calendar-item item22">22</div>
+          <div class="calendar-item item23">23</div>
+          <div class="calendar-item item24">24</div>
+          <div class="calendar-item item25">25</div>
+          <div class="calendar-item item26">26</div>
+          <div class="calendar-item item27">27</div>
+          <div class="calendar-item item28">28</div>
+          <div class="calendar-item item29">29</div>
+       
+    </section>
+
+      <!-- ===== FORMULARIO Y TARJETAS DE TAREAS =====-->
+    <section class="main__home--tasks">
+    <section class="main__home--tasks-form">
+        <form class="tasks-form__new-task-form">
+
+           <input type="text" placeholder="taskTitle"  name="taskTitle" id="taskTitle">
+           <select class="filters_category" name="taskName" id="taskName">
+            <option>By category</option> </select>
+          
+           <input type="text" placeholder="Details">
+            <select class="filters__priority" name="taskPriority" 
+            id="taskPriority">
+
+            <option>By priority</option> </select>
+
+           <button type="submit">+</button>
+          </form>
+         <section class="main__home--filters"></section>
+ 
+          <input class= "search-bar" type="search" placeholder="Search tasks" 
+          id="searchTasks" 
+         name="searchTasks">
+      </section>
+        
+
+         <!-- FILTROS DE TAREAS -->
+         
+
+        <!-- GRID DE TAREAS -->
+      <section class="main__home--tasks-grid">
+        
+          <article class="task-card">
+            <h3 class="about-caption">Learn JavaScript</h3>
+            <p class="task-card__task-description">Master the language powering <br> the modern web</p>
+            <p class="task-card__card-date">Start date: 07-07-2023</p>
+            <section class="task-card__actions">
+              <button>Complete</button>
+              <button>Edit</button>
+              <button>Delete</button>
+            </section>
+          </article>
+          <article class="task-card"> 
+              <h3 class="about-caption">Python Mastering</h3>
+              <p class="task-card__description">To master the Computer and Data Science, ML programms and <br> automatations backend programming langauge </p>
+              <p class="task-card__card-date">Start date: 14-04-2024</p>
+              <section class="task-card__actions">
+                <button>Complete</button>
+                <button>Edit</button>
+                <button>Delete</button>
+              </section>
+          </article>
+          <article class="task-card"> 
+            <h3 class="about_caption ">Reding the Bible</h3>
+            <p class="task-card__description"> To master God's word and apply into daily life, by converting <br> Jesus Christ teaches into real actions </p>
+            <p class= "task-card__date">Start date: 15-03-2024</p>
+            <section class="task-card__actions">
+              <button>Complete</button>
+              <button>Edit</button>
+              <button>Delete</button>
+            </section>
+          </article>
+          <article class="task-card" id="GYM">
+            <h3 class="about_caption">  Going to the gym</h3>
+            <p class="task-card__description">To take care about fitness health  and get <br>
+            an aesthetic body </p>
+            <p class="task-card__start-date">2025-10-06</p>
+            <section class="task-card__actions">
+              <button>Complete</button>
+              <button>Edit</button>
+              <button>Delete</button>
+            </section>
+          </article>
+          <button class="load-more">Load more</button>
+      </section>
+    </section>
+        
+<section class="footer__dashboard-stats" >
+
+  <section class="footer__stats-card--completed">
+      <h3>Completed Tasks</h3>
+      <p>04</p>
+  </section>
+
+    <section class="footer__stats-card--pending">
+      <h3>Pending Tasks</h3>
+      <p>15</p>
+    </section>
+
+    <section class="footer-stats__active-users">
+      <h3>Tasks Created</h3>
+      <p>1,500</p>
+      <h3>25k+ Active Users</h3>
+
+    </section>
+
+    <section class="avatars">
+        <!-- imágenes de usuarios -->
+      </section>
+</section>
+</main>
+
+<!--Stats-->
+
+
+<footer>
+   <section class="rights-and-social-media">
+     <div class="brand-and-logo">
+      <img class="logo" src="logo.png">
+      <p class="brand">Yista Lab</p>
+     </div>
+     <p class="rights">C 2024 Aqeel Shahzad All rights reserved</p>
+
+     <div class="images">
+      <img src="facebook.png" alt="twitter logo" id="facebook" height="30px"><img src="linkedin.png" alt="linkedin logo">
+      <img src="twitter.png" alt="twitter logo"> <img src="github.png" alt="Github logo">
+      </div>
+        
+   </section>
+ </footer>
+</body>
+</html>
