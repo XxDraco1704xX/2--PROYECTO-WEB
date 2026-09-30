@@ -1,9 +1,10 @@
-*, *::before *::after{
+@import url('components/footer&rights.css');
+*, *::before, *::after{
     box-sizing: border-box;
     margin:0;
-    padding:0;
-}
-@import url('components/footer&rights.css');
+    }
+
+
 .main{
     display: grid;
     flex-wrap: wrap;
@@ -11,9 +12,10 @@
 }
 
 /*Header*/
-.nav{
+header{
     background-color: #f2eaea;
     height: 30px;
+    width:100%
 }
 
 .nav__list{
@@ -21,24 +23,21 @@
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between; gap:1.5rem;
-  background-color: #f2eaea; align-items:flex-end;
+  background-color: #f2eaea; 
 }
 
-.nav__item{
-    margin: 10px; 
-    background-color: bisque; 
-}
+
 .nav__avatar{
     max-height: 40px;
     max-width: 40px; padding: 20px; 
     border-radius: 50%;
     
 }
-
 .nav__logo{
     justify-content: baseline; 
-    max-height: 40px;
+    max-height: 50px;
     max-width: 40px;
+    border-radius: 20px;
 }
 
 .nav__item>nav__text{
@@ -49,60 +48,130 @@
     font-size: 60px;
     text-align: "left"; 
     font-size: 40px; 
-    padding-top: 0.5rem; margin:0rem; 
+    padding-top:0.5rem; 
+    
+}
+.main__home-greeting {
+  width: 100%;
+  background-color: none;
+  margin: 2rem 0rem;
+  padding-top: 3rem;              /* Separa el saludo del dashboard */
 }
 
 .hello-user{
     font-family: "Verdana";
-    padding-top: 10rem;
+    font-size: 1.75rem;
+    font-weight: 700
 }
-
 /*GRID DONDE ESTAN EL CALENDARIO, CARTAS, FORMULARIOS DE TAREAS, ETC */
 
 .Python{
     background-color: #F0D1A8
 }
-.main__home--tasks-grid{
-    background-color: #FAF7F2;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
 
-}
-.dashboard-container {
+.dashboard-container{
   display: grid;
-  grid-template-columns: 300px 1fr; /* Columna fija para el calendario, flexible para las tareas */
+  grid-template-columns: 300px minmax(0, 1fr);
   gap: 1rem;
-  background-color: #fcf8f2; /* Tono crema del fondo */
-  padding: 2rem;
+  background-color: #fcf8f2; 
   border-radius: 1.5rem;
+  align-items: start;
 }
 
 .main__home--calendar-grid{
-    justify-content: stretch;
     display: grid;
-    grid-template-columns: repeat(6, 1.4rem); 
+    grid-template-columns: repeat(6, 1.5rem); 
+    gap: 10px;
 }
+
+.main__home--tasks{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+    min-width: 0;
+}
+
+.main__home--tasks-form{
+    display: grid;
+    justify-items: start;
+    align-content: start;
+    gap: 0.35rem;
+}
+
+.tasks-form__new-task-form{
+    display: grid;
+    justify-items: start;
+    gap: 0.35rem;
+    align-self: start;
+}
+
+.main__home--tasks-grid{
+    background-color: #FAF7F2;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-content: start;
+    min-width: 0;
+}
+
 .task-card{
     background-color: #F0D1A8; 
     border-radius: 1rem 1rem;
+    padding: 1rem;
+    flex: 1 1 14rem;
+    min-width: 0;
 }
 
-.main__home--calendar-days{
-    grid-template-columns: repeat(6,1.5rem) ;
-    font-weight: bold;
-    text-shadow: #4f473d;
+.load-more{
+    flex-basis: 100%;
+}
 
+.footer__dashboard-stats{
+    grid-column: 1 / -1;
+}
+
+.task-card__actions>button:nth-child(2):hover{
+    background-color:blue; 
+    transform: translateY(-5px)
+    
+}
+.task-card__actions>button:hover{
+    background-color:#3e3ed8; 
+}
+.task-card__actions>button::before{
+    background-color:red; 
 }
 
 .about__caption{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 300;
 }
-
-
-.greeting{
-    background-color: #f8f8f8; 
+.footer__dashboard-stats{
+    display:flex; 
+   flex-direction: row;
+   justify-content: space-between; /* o gap: 20px / flex-start según el diseño */
+   align-items: center;
+   width: 100%;
 }
-
-
+.footer__stats-card--completed{
+    padding: 1.5rem;
+    margin: 1rem 0.5rem;
+    border-radius: 10px 20px;
+    background-color: #F0D1A8;
+    width: 150px;
+    height: 150px; 
+}
+.footer__stats-card--pending{
+ padding: 1.5rem;
+ margin: 1rem 0.5rem;
+ background-color: #c4a49f;
+ width: 150px;
+ height: 150px; 
+ border-radius: #975d11;
+}
+.footer-stats__active-users{
+ width: 18.75rem;
+ height: 3rem;
+ background-color: #FFF;
+ border-radius: 30px;
+}
