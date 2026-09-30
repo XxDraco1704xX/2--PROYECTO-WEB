@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="category" content="time management, planning, day planning">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{url_for(static, filename='styles.css')}}">
     <link rel="shortcut icon" type="x-icon" href="https://i.pinimg.com/736x/1f/3f/4c/1f3f4ce973d946578567f190e2773709.jpg"> 
     <title>TO DO LIST APP</title>
 </head>
@@ -160,19 +160,19 @@
       </section>
     </section>
         
-<section class="footer__dashboard-stats" >
+<section class="footer__stats-dashboard" >
 
-  <section class="footer__stats-card--completed">
+  <section class="footer__stats--tasks-completed">
       <h3>Completed Tasks</h3>
       <p>04</p>
   </section>
 
-    <section class="footer__stats-card--pending">
+    <section class="footer__stats--tasks-pending">
       <h3>Pending Tasks</h3>
       <p>15</p>
     </section>
 
-    <section class="footer-stats__active-users">
+    <section class="footer__stats--active-users">
       <h3>Tasks Created</h3>
       <p>1,500</p>
       <h3>25k+ Active Users</h3>
@@ -180,9 +180,9 @@
     </section>
 
     <section class="avatars">
-        <!-- imágenes de usuarios -->
-      </section>
-</section>
+        <h5>Título que no aparece en main</h5>
+        <p> Este párrrafo no va a aparecer en main porque es de la otra rama</P>
+</section> 
 </main>
 
 <!--Stats-->

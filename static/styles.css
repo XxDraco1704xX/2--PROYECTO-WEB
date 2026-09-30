@@ -161,15 +161,19 @@ header{
     width: 150px;
     height: 150px; 
 }
-.footer__stats-card--pending{
+.footer__stats--completed>h3{
+    font-size: 2rem;
+}
+
+.footer__stats--card-pending{
  padding: 1.5rem;
  margin: 1rem 0.5rem;
  background-color: #c4a49f;
  width: 150px;
  height: 150px; 
- border-radius: #975d11;
+ border-radius: 20px #975d11;
 }
-.footer-stats__active-users{
+.footer__stats--active-users{
  width: 18.75rem;
  height: 3rem;
  background-color: #FFF;
